@@ -11,6 +11,15 @@
 #more string methods for working with and processing text data,
 #how to create functions to make the components of our spell checker more reusable.
 
+#In this code, we're going to explore how to customize the functions we write to improve the spell checker we built from the previous mission. As our code becomes more modular and separated into functions, it can often become harder to debug. We'll explore how to debug our code in this mission using the errors the Python interpreter returns.
+
+#Recall that our spell checker works by:
+
+#reading in a file of correctly spelled words, tokenizing it into a list and assigning it to the variable vocabulary,
+#reading in, cleaning, and tokenizing the piece of text we want spell checked,
+#comparing each word (token) in the piece of text with each word in vocabulary and returning the ones that weren't found.
+#The file dictionary.txt contains a sequence of correctly spelled words, which we'll use to seed the vocabulary. The file story.txt is a piece of text containing some misspelled words. In the following code cell, we added the spell checker we wrote so far from the previous mission.
+
 
 def clean_text(text_string, special_characters):
     cleaned_string = text_string
